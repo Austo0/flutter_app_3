@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_app_3/app/bluetooth/bluetooth_page.dart';
 import 'package:flutter_app_3/app/sign_in/sign_in_page.dart';
 import 'package:flutter_blue/flutter_blue.dart';
 import 'package:flutter/services.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
-      home: SignInPage()
+      home: bluetoothPage(),
     );
   }
 }
