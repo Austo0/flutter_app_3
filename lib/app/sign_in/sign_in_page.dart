@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_3/app/sign_in/sign_in_button.dart';
+import 'package:flutter_app_3/app/sign_in/social_sign_in_button.dart';
 import 'package:flutter_app_3/common_widgets/custom_raised_button.dart';
 
 class SignInPage extends StatelessWidget {
@@ -32,32 +33,20 @@ class SignInPage extends StatelessWidget {
             ),
           ),
           SizedBox(height: 48.0),
-          CustomRaisedButton(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Image.asset('images/google.png',),
-                Text('Sign in with Google'),
-                Opacity(
-                  opacity: 0.0,
-                  child: Image.asset('images/google.png',),),
-              ],
-            ),
-            color: Colors.white,
-            onPressed: () {},),
-          SizedBox(height: 8.0),
-          SignInButton(
+          SocialSignInButton(
             text: 'Sign in with Google',
             color: Colors.white,
             textColor: Colors.black87,
             onPressed: () {},
+            assestName: 'images/google.png',
           ),
           SizedBox(height: 8.0),
-          SignInButton(
+          SocialSignInButton(
             text: 'Sign in with Facebook',
             color: Color(0xFF334D92),
             textColor: Colors.white,
             onPressed: () {},
+            assestName: 'images/facebook.png',
           ),
           SizedBox(height: 8.0),
           SignInButton(
